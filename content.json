@@ -1,0 +1,113 @@
+{
+  "nome": "Physio Mondego",
+  "telefone": "+351 239 094 197",
+  "email": "info@physiomondego.pt",
+  "morada": "R. do Carmo 54, 3000-098 Coimbra, Portugal",
+  "localizacao_curta": "Coimbra, Baixa",
+  "hero": {
+    "headline": "Fisioterapia e Osteopatia de Excelência em Coimbra",
+    "subheadline": "Unidade privada especializada em reabilitação, alívio da dor e desempenho físico, com acompanhamento personalizado em cada sessão. Recupere a sua qualidade de vida com a nossa equipa dedicada.",
+    "primaryCtaLabel": "Marcar sessão",
+    "primaryCtaHref": "#contacto",
+    "secondaryCtaLabel": "Ver serviços",
+    "secondaryCtaHref": "#servicos",
+    "badges": [
+      "Physiotherapy & Osteopathy Private Unit",
+      "Equipa especializada em dor",
+      "Atendimento 1 para 1"
+    ],
+    "highlights": [
+      "Planos de tratamento 100% personalizados",
+      "Foco em dor músculo-esquelética e reabilitação avançada",
+      "Localização central e acessível em Coimbra"
+    ]
+  },
+  "servicos": [
+    {
+      "slug": "fisioterapia-musculo-esqueletica",
+      "titulo": "Fisioterapia Músculo-Esquelética",
+      "descricao": "Avaliação clínica rigorosa e tratamento de dores articulares, musculares, tendinosas, lesões desportivas e perturbações da postura.",
+      "beneficios": [
+        "Redução imediata da dor e inflamação",
+        "Melhoria significativa da mobilidade e função",
+        "Prevenção ativa de recidivas e novas lesões"
+      ]
+    },
+    {
+      "slug": "osteopatia",
+      "titulo": "Osteopatia Clínica",
+      "descricao": "Abordagem manual e global ao corpo, desenhada para restaurar a mobilidade articular, o equilíbrio biomecânico e o bem-estar sistémico.",
+      "beneficios": [
+        "Alívio duradouro de dores crónicas e complexas",
+        "Restabelecimento do equilíbrio postural",
+        "Sensação global de leveza, flexibilidade e conforto"
+      ]
+    },
+    {
+      "slug": "quiropraxia-manipulacao-articular",
+      "titulo": "Quiropraxia e Manipulação Articular",
+      "descricao": "Técnicas seguras e precisas de ajuste e manipulação articular para libertar compressões mecânicas e recuperar a amplitude de movimento.",
+      "beneficios": [
+        "Alívio rápido de dores de origem mecânica",
+        "Melhoria da amplitude de movimento articular",
+        "Otimização imediata da função da coluna vertebral"
+      ]
+    },
+    {
+      "slug": "massagem-terapeutica-e-desportiva",
+      "titulo": "Massagem Terapêutica e Desportiva",
+      "descricao": "Intervenção focada na recuperação orgânica muscular, libertação profunda de tensão acumulada e preparação do tecido para o esforço físico.",
+      "beneficios": [
+        "Redução visível da tensão e fadiga muscular",
+        "Estímulo da circulação sanguínea e linfática",
+        "Recuperação acelerada após episódios de treino intenso"
+      ]
+    }
+  ],
+  "testemunhos": [
+    {
+      "nome": "Maria L.",
+      "texto": "A equipa da Physio Mondego foi incansável. Profissionais extremamente atenciosos e competentes. A minha dor lombar crônica melhorou de forma significativa após apenas algumas sessões. Recomendo de olhos fechados!",
+      "origem": "Google Maps",
+      "rating": 5
+    },
+    {
+      "nome": "João P.",
+      "texto": "Tive um excelente acompanhamento desde o primeiro dia. Explicam sempre cada passo do tratamento de forma clara, o que me deu imensa segurança. O espaço é fantástico e o resultado ainda melhor. Recomendo a 100%.",
+      "origem": "Google Maps",
+      "rating": 5
+    },
+    {
+      "nome": "Ana S.",
+      "texto": "Ambiente muito acolhedor e uma equipa que se preocupa genuinamente com o bem-estar de quem lá vai. Senti grandes melhorias na minha postura logo nas primeiras sessões de osteopatia. Muito obrigada!",
+      "origem": "Fresha",
+      "rating": 5
+    }
+  ],
+  "sobre": {
+    "headline": "Uma equipa inteiramente dedicada à sua recuperação",
+    "texto": "Na Physio Mondego, em pleno coração de Coimbra, encontra uma equipa de fisioterapeutas e osteopatas com formação avançada e em constante atualização. Acreditamos e praticamos uma abordagem humanizada, focada em oferecer planos de tratamento 100% personalizados, rigorosamente baseados em evidência científica e adaptados às exigências reais do seu dia a dia.",
+    "bullets": [
+      "Atendimento estritamente individualizado em cada sessão",
+      "Comunicação clara, transparente e próxima com o paciente",
+      "Coordenação sinérgica entre fisioterapia e osteopatia para potenciar resultados"
+    ]
+  },
+  "call_to_action": {
+    "headline": "Comece hoje mesmo a sua jornada de recuperação",
+    "texto": "Não deixe que a dor limite a sua vida. Explique-nos o seu problema e, em conjunto, definiremos o plano de tratamento mais eficaz para reduzir a sua dor e recuperar a sua qualidade de vida a longo prazo.",
+    "ctaLabel": "Agendar a minha avaliação",
+    "ctaHref": "#contacto"
+  },
+  "redes": {
+    "facebook": "https://www.facebook.com/physiomondego",
+    "maps": "https://www.google.com/maps/place/Physio+Mondego/"
+  },
+  "horarios": {
+    "descricao": "Horário de funcionamento típico de clínica de fisioterapia em Coimbra. Confirmar sempre marcação por telefone.",
+    "seg_sex": "09h00 - 19h00",
+    "sabado": "09h00 - 13h00",
+    "domingo": "Encerrado",
+    "nota": "Horário meramente indicativo. Recomendamos que confirme sempre a disponibilidade por telefone antes de se deslocar à clínica."
+  }
+}
