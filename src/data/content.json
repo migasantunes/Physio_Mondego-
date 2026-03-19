@@ -1,0 +1,29 @@
+{
+    "empresa": {
+      "nome": "NOME",
+      "telefone": "900000000",
+      "email": "email@empresa.pt",
+      "morada": "Rua Exemplo",
+      "horarios": [
+        { "dias": "Segunda a Sexta", "horas": "09:00 - 18:00" },
+        { "dias": "Sábado", "horas": "Encerrado" }
+      ]
+    },
+    "cores": {
+      "primaria": "bg-blue-600",
+      "texto_destaque": "text-blue-600"
+    },
+    "hero": {
+      "titulo": "Transformamos o seu negócio.",
+      "subtitulo": "Subtítulo persuasivo gerado pela IA.",
+      "cta_botao": "Pedir Orçamento",
+      "imagem_fundo": "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80"
+    },
+    "servicos": [
+      {
+        "id": 1,
+        "titulo": "Serviço Base",
+        "descricao": "Descrição curta gerada pela IA."
+      }
+    ]
+  }
