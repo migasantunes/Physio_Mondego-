@@ -1,25 +1,82 @@
-import content from '../data/content.json';
+import {
+  Activity,
+  Hand,
+  Bone,
+  Dumbbell,
+  ChevronRight,
+  Check,
+} from "lucide-react";
+import content from "@/data/content.json";
+
+const serviceIcons = {
+  "fisioterapia-musculo-esqueletica": Activity,
+  osteopatia: Hand,
+  "quiropraxia-manipulacao-articular": Bone,
+  "massagem-terapeutica-e-desportiva": Dumbbell,
+};
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-20 bg-gray-50">
+    <section id="servicos" className="py-20 lg:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className={`text-3xl font-extrabold ${content.cores.texto_destaque} sm:text-4xl`}>
+        {/* Section Header */}
+        <div className="max-w-2xl mx-auto text-center mb-16">
+          <span className="inline-block text-emerald-600 font-semibold text-sm tracking-wider uppercase mb-3">
             Os Nossos Serviços
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            Tratamentos especializados para a sua{" "}
+            <span className="text-emerald-600">recuperação</span>
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            Soluções à medida das suas necessidades.
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Na Physio Mondego oferecemos um leque completo de serviços de
+            fisioterapia, osteopatia e reabilitação, sempre adaptados às suas
+            necessidades.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {content.servicos.map((servico) => (
-            <div key={servico.id} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{servico.titulo}</h3>
-              <p className="text-gray-600 leading-relaxed">{servico.descricao}</p>
-            </div>
-          ))}
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {content.servicos.map((servico, index) => {
+            const Icon = serviceIcons[servico.slug] || Activity;
+            return (
+              <article
+                key={servico.slug}
+                className="group relative bg-card rounded-2xl p-7 border border-border hover:border-emerald-200 transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-1"
+              >
+                {/* Icon */}
+                <div className="size-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-emerald-100">
+                  <Icon className="size-6 text-emerald-600" />
+                </div>
+
+                {/* Title and description */}
+                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-emerald-700 transition-colors duration-200">
+                  {servico.titulo}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-5">
+                  {servico.descricao}
+                </p>
+
+                {/* Benefits */}
+                <ul className="flex flex-col gap-2.5">
+                  {servico.beneficios.map((beneficio, bi) => (
+                    <li
+                      key={bi}
+                      className="flex items-start gap-2.5 text-sm text-foreground/80"
+                    >
+                      <Check className="size-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <span>{beneficio}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Hover arrow indicator */}
+                <div className="absolute top-7 right-7 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 group-hover:translate-x-0">
+                  <ChevronRight className="size-5 text-emerald-500" />
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

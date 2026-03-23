@@ -1,14 +1,27 @@
-import Hero from '../components/Hero';
-import Services from '../components/Services';
-import ContactForm from '../components/ContactForm';
-// O Claude depois adiciona aqui o Testimonials e o Footer
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import Schedule from "@/components/Schedule";
+import CallToAction from "@/components/CallToAction";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <Services />
-      <ContactForm />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+        <About />
+        <Testimonials />
+        <Schedule />
+        <CallToAction />
+        <ContactForm />
+      </main>
+      <Footer />
+    </>
   );
 }

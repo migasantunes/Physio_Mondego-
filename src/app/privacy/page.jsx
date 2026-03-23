@@ -8,7 +8,7 @@ export default function Privacidade() {
         
         <div className="space-y-6 text-gray-600 leading-relaxed">
           <p>
-            A privacidade e segurança dos seus dados são uma prioridade para a <strong>{content.empresa.nome}</strong>. 
+            A privacidade e segurança dos seus dados são uma prioridade para a <strong>{content.nome}</strong>. 
             Esta política explica como recolhemos e tratamos os dados pessoais que nos fornece através do nosso website.
           </p>
 
@@ -32,7 +32,7 @@ export default function Privacidade() {
           <h2 className="text-xl font-semibold text-gray-900 mt-8">4. Os seus direitos</h2>
           <p>
             Nos termos do Regulamento Geral sobre a Proteção de Dados (RGPD), tem o direito de solicitar o acesso, retificação ou apagamento dos seus dados pessoais. 
-            Para exercer estes direitos, por favor contacte-nos através do email: <strong>{content.empresa.email}</strong>.
+            Para exercer estes direitos, por favor contacte-nos através do email: <strong>{content.email}</strong>.
           </p>
         </div>
       </div>
