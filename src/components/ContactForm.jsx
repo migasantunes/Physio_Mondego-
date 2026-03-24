@@ -7,11 +7,11 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="inline-block text-emerald-600 font-semibold text-sm tracking-wider uppercase mb-3">
+          <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-3">
             Contacto
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Fale <span className="text-emerald-600">connosco</span>
+            Fale <span className="text-blue-600">connosco</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Tem dúvidas ou quer marcar uma sessão? Entre em contacto — estamos
@@ -23,10 +23,10 @@ export default function ContactForm() {
           {/* Contact Info — Left */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             {/* Phone card */}
-            <div className="bg-card rounded-2xl p-6 border border-border hover:border-emerald-200 transition-all duration-300 hover:shadow-md cursor-pointer group">
+            <div className="bg-card rounded-2xl p-6 border border-border hover:border-blue-200 transition-all duration-300 hover:shadow-md cursor-pointer group">
               <div className="flex items-start gap-4">
-                <div className="size-11 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-200 transition-colors duration-200">
-                  <Phone className="size-5 text-emerald-600" />
+                <div className="size-11 rounded-xl bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors duration-200">
+                  <Phone className="size-5 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-sm mb-1">
@@ -34,7 +34,7 @@ export default function ContactForm() {
                   </h3>
                   <a
                     href={`tel:${content.telefone}`}
-                    className="text-emerald-600 hover:text-emerald-700 font-medium text-sm transition-colors duration-200"
+                    className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200"
                   >
                     {content.telefone}
                   </a>
@@ -43,10 +43,10 @@ export default function ContactForm() {
             </div>
 
             {/* Email card */}
-            <div className="bg-card rounded-2xl p-6 border border-border hover:border-emerald-200 transition-all duration-300 hover:shadow-md cursor-pointer group">
+            <div className="bg-card rounded-2xl p-6 border border-border hover:border-blue-200 transition-all duration-300 hover:shadow-md cursor-pointer group">
               <div className="flex items-start gap-4">
-                <div className="size-11 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-200 transition-colors duration-200">
-                  <Mail className="size-5 text-emerald-600" />
+                <div className="size-11 rounded-xl bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors duration-200">
+                  <Mail className="size-5 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-sm mb-1">
@@ -54,7 +54,7 @@ export default function ContactForm() {
                   </h3>
                   <a
                     href={`mailto:${content.email}`}
-                    className="text-emerald-600 hover:text-emerald-700 font-medium text-sm transition-colors duration-200"
+                    className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200"
                   >
                     {content.email}
                   </a>
@@ -63,10 +63,10 @@ export default function ContactForm() {
             </div>
 
             {/* Address card */}
-            <div className="bg-card rounded-2xl p-6 border border-border hover:border-emerald-200 transition-all duration-300 hover:shadow-md cursor-pointer group">
+            <div className="bg-card rounded-2xl p-6 border border-border hover:border-blue-200 transition-all duration-300 hover:shadow-md cursor-pointer group">
               <div className="flex items-start gap-4">
-                <div className="size-11 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-200 transition-colors duration-200">
-                  <MapPin className="size-5 text-emerald-600" />
+                <div className="size-11 rounded-xl bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors duration-200">
+                  <MapPin className="size-5 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-sm mb-1">
@@ -76,7 +76,7 @@ export default function ContactForm() {
                     href={content.redes.maps}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground/70 hover:text-emerald-600 text-sm leading-relaxed transition-colors duration-200"
+                    className="text-foreground/70 hover:text-blue-600 text-sm leading-relaxed transition-colors duration-200"
                   >
                     {content.morada}
                   </a>
@@ -106,7 +106,7 @@ export default function ContactForm() {
                     name="name"
                     required
                     placeholder="O seu nome"
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500 transition-all duration-200"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -122,7 +122,7 @@ export default function ContactForm() {
                     name="email"
                     required
                     placeholder="email@exemplo.pt"
-                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500 transition-all duration-200"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200"
                   />
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
                   id="contact-phone"
                   name="phone"
                   placeholder="+351 9XX XXX XXX"
-                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500 transition-all duration-200"
+                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200"
                 />
               </div>
 
@@ -159,7 +159,7 @@ export default function ContactForm() {
                   rows={4}
                   required
                   placeholder="Descreva brevemente o motivo do seu contacto..."
-                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500 transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-200 resize-none"
                 />
               </div>
 
@@ -170,7 +170,7 @@ export default function ContactForm() {
                   name="rgpd_consent"
                   type="checkbox"
                   required
-                  className="mt-1 size-4 cursor-pointer accent-emerald-600"
+                  className="mt-1 size-4 cursor-pointer accent-blue-600"
                 />
                 <label
                   htmlFor="rgpd_consent"
@@ -180,7 +180,7 @@ export default function ContactForm() {
                   <a
                     href="/privacy"
                     target="_blank"
-                    className="text-emerald-600 hover:text-emerald-700 font-medium underline underline-offset-2 transition-colors duration-200"
+                    className="text-blue-600 hover:text-blue-700 font-medium underline underline-offset-2 transition-colors duration-200"
                   >
                     Política de Privacidade
                   </a>{" "}
@@ -191,7 +191,7 @@ export default function ContactForm() {
 
               <button
                 type="submit"
-                className="group w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 cursor-pointer hover:shadow-lg hover:shadow-emerald-600/20 flex items-center justify-center gap-2"
+                className="group w-full bg-blue-600 hover:bg-blue-700 text-white py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 cursor-pointer hover:shadow-lg hover:shadow-blue-600/20 flex items-center justify-center gap-2"
               >
                 Enviar mensagem
                 <Send className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />

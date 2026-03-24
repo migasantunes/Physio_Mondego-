@@ -11,24 +11,24 @@ export default function Schedule() {
   const { horarios } = content;
 
   return (
-    <section id="horarios" className="py-20 lg:py-28 bg-emerald-50/50">
+    <section id="horarios" className="py-20 lg:py-28 bg-blue-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-block text-emerald-600 font-semibold text-sm tracking-wider uppercase mb-3">
+            <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-3">
               Horários
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Quando nos pode{" "}
-              <span className="text-emerald-600">visitar</span>
+              <span className="text-blue-600">visitar</span>
             </h2>
           </div>
 
           {/* Schedule card */}
           <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
             {/* Header */}
-            <div className="bg-emerald-600 px-6 py-4 flex items-center gap-3">
+            <div className="bg-blue-600 px-6 py-4 flex items-center gap-3">
               <Clock className="size-5 text-white" />
               <h3 className="text-white font-semibold">
                 Horário de Funcionamento
@@ -43,14 +43,14 @@ export default function Schedule() {
                 return (
                   <div
                     key={key}
-                    className="flex items-center justify-between px-6 py-5 hover:bg-emerald-50/50 transition-colors duration-200"
+                    className="flex items-center justify-between px-6 py-5 hover:bg-blue-50/50 transition-colors duration-200"
                   >
                     <span className="font-medium text-foreground">{label}</span>
                     <span
                       className={`font-semibold text-sm px-3 py-1.5 rounded-lg ${
                         isClosed
                           ? "bg-red-50 text-red-600"
-                          : "bg-emerald-50 text-emerald-700"
+                          : "bg-blue-50 text-blue-700"
                       }`}
                     >
                       {hours}
@@ -75,7 +75,7 @@ export default function Schedule() {
           <div className="text-center mt-8">
             <a
               href={`tel:${content.telefone}`}
-              className="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-800 font-semibold transition-colors duration-200 cursor-pointer"
+              className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-800 font-semibold transition-colors duration-200 cursor-pointer"
             >
               <Phone className="size-4" />
               Ligue para {content.telefone}

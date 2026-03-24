@@ -7,7 +7,7 @@ export default function CallToAction() {
   return (
     <section className="py-20 lg:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-700 via-emerald-600 to-emerald-500 px-8 py-16 sm:px-16 sm:py-20 text-center">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 px-8 py-16 sm:px-16 sm:py-20 text-center">
           {/* Decorative elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute -top-20 -right-20 size-60 rounded-full bg-white/5 blur-2xl" />
@@ -30,7 +30,7 @@ export default function CallToAction() {
 
             <a
               href={call_to_action.ctaHref}
-              className="group inline-flex items-center gap-2.5 bg-white hover:bg-emerald-50 text-emerald-700 px-8 py-4 rounded-xl text-base font-bold transition-all duration-200 cursor-pointer hover:shadow-2xl hover:shadow-black/10 hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2.5 bg-white hover:bg-blue-50 text-blue-700 px-8 py-4 rounded-xl text-base font-bold transition-all duration-200 cursor-pointer hover:shadow-2xl hover:shadow-black/10 hover:-translate-y-0.5"
             >
               {call_to_action.ctaLabel}
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />

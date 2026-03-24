@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google"; // Using a modern, clean geometric font to reduce 'wordiness' and increase readability
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
 });
@@ -32,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-PT">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${outfit.variable} antialiased`}>
         {children}
       </body>
     </html>
